@@ -11,24 +11,63 @@ img {
   display: block;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* UTILS */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 1330px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 /* HEADER */
 
-.header_orange {
-  background-color: orange;
-  height: 100px;
+.header {
+  background-color: #ff6900;
+  height: 70px;
+  color: white;
+  font-weight: bold;
+}
+
+.header_flex {
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  align-items: center;
+}
+
+.logo {
+  height: 30px;
+  align-items: center;
+}
+
+.logo img {
+  height: 100%;
+}
+
+.header_text {
+  width: 180px;
+  text-align: center;
+}
+
+.header_text a {
+  padding: 2px;
 }
 
 /* MAIN */
 
-.container {
-  max-width: 1330px;
-  margin: 50px auto;
-  padding: 0 15px;
-}
-
 #products {
   display: flex;
   flex-wrap: wrap;
+  margin: 20px auto;
 }
 
 .cards {
