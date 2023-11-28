@@ -21,7 +21,7 @@ img {
 /* MAIN */
 
 .container {
-  max-width: 1080px;
+  max-width: 1330px;
   margin: 50px auto;
   padding: 0 15px;
 }
@@ -32,19 +32,60 @@ img {
 }
 
 .cards {
-  background-color: lightgray;
-  margin: 5px;
-  width: calc(100% / 3 - 10px);
+  position: relative;
+  margin: 20px;
+  width: calc(100% / 3 - 40px);
 }
 
-#products .cards img:last-child {
+.cards .second_img {
   display: none;
 }
 
-#products .cards:hover img:last-child {
+.cards:hover .first_img {
+  display: none;
+}
+
+.cards:hover .second_img {
   display: block;
 }
 
-#products .cards:hover img:first-child {
-  display: none;
+.heart {
+  position: absolute;
+  top: 10px;
+  padding: 5px 15px;
+  background-color: white;
+  right: 0px;
+  font-size: 2rem;
+}
+
+.sale {
+  position: absolute;
+  bottom: 35px;
+}
+
+.cut-off {
+  background-color: red;
+  padding: 5px 15px;
+  color: white;
+  margin-right: 3px;
+}
+
+.sustenaibl {
+  background-color: green;
+  padding: 5px 15px;
+  color: white;
+}
+
+/* FOOTER */
+
+.footer {
+  color: white;
+  background-color: #1a1a1a;
+
+  /* debug */
+  height: 100px;
+}
+
+.footer > section {
+  width: 80%;
 }
