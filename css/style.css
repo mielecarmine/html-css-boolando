@@ -62,6 +62,10 @@ body {
   padding: 2px;
 }
 
+.header_text i {
+  padding: 5px;
+}
+
 /* MAIN */
 
 #products {
@@ -72,7 +76,7 @@ body {
 
 .cards {
   position: relative;
-  margin: 20px;
+  margin: 50px 10px;
   width: calc(100% / 3 - 40px);
 }
 
@@ -115,6 +119,20 @@ body {
   color: white;
 }
 
+.bottom_text {
+  position: absolute;
+  bottom: -60px;
+}
+
+.new_price {
+  color: red;
+  font-weight: bold;
+}
+
+.old_price {
+  text-decoration: line-through;
+}
+
 /* FOOTER */
 
 .footer {
@@ -122,9 +140,31 @@ body {
   background-color: #1a1a1a;
 
   /* debug */
-  height: 100px;
+  height: 70px;
 }
 
-.footer > section {
-  width: 80%;
+.footer_flex {
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.footer_text {
+  line-height: 30px;
+}
+
+.footer_text span {
+  font-weight: bold;
+}
+
+.footer_text a {
+  font-size: small;
+  padding-right: 3px;
+}
+
+.footer_text .icons {
+  font-size: large;
+  padding-right: 7px;
 }
