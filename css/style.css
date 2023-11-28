@@ -1,0 +1,50 @@
+/* RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* HEADER */
+
+.header_orange {
+  background-color: orange;
+  height: 100px;
+}
+
+/* MAIN */
+
+.container {
+  max-width: 1080px;
+  margin: 50px auto;
+  padding: 0 15px;
+}
+
+#products {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cards {
+  background-color: lightgray;
+  margin: 5px;
+  width: calc(100% / 3 - 10px);
+}
+
+#products .cards img:last-child {
+  display: none;
+}
+
+#products .cards:hover img:last-child {
+  display: block;
+}
+
+#products .cards:hover img:first-child {
+  display: none;
+}
